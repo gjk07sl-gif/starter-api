@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js",
-    "test": "jest --runInBand"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
   },
   "dependencies": {
     "express": "^4.19.2"
@@ -15,6 +15,8 @@
     "supertest": "^6.3.3"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+      "transform": {}
+
   }
 }
